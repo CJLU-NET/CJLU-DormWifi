@@ -6,7 +6,7 @@
 		xmlns:hc="https://handyorg.github.io/handycontrol"
 		xmlns:local="clr-namespace:CJLUDormWifi"
 		mc:Ignorable="d"
-		Title="计量生活区移动WIFI登录" Height="165" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+		Title="计量生活区移动WIFI登录" Height="200" Width="300" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
 
 		<StackPanel>
 			<TextBox 
