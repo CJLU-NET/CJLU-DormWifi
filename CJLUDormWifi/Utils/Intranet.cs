@@ -2,12 +2,11 @@
 {
     public class Intranet
     {
-
-        public static string portalUri = "https://portal2.cjlu.edu.cn:801/eportal/";
-        public static string baseUri = "https://portal2.cjlu.edu.cn/";
-        public static string loginPage = "https://portal2.cjlu.edu.cn/a38.htm";
-        public static string resultPage = "https://portal2.cjlu.edu.cn/3.htm";
-        public static string getIPPage = "https://portal2.cjlu.edu.cn/a79.htm";
+        public static string portalUri = "https://portal1.cjlu.edu.cn:801/eportal/";
+        public static string baseUri = "https://portal1.cjlu.edu.cn/";
+        public static string loginPage = "https://portal1.cjlu.edu.cn/a38.htm";
+        public static string resultPage = "https://portal1.cjlu.edu.cn/3.htm";
+        public static string getIPPage = "https://portal1.cjlu.edu.cn/a79.htm";
 
         public static bool Login(string username, string password, bool? connect = true)
         {
