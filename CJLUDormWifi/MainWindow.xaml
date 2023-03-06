@@ -6,7 +6,7 @@
 		xmlns:hc="https://handyorg.github.io/handycontrol"
 		xmlns:local="clr-namespace:CJLUDormWifi"
 		mc:Ignorable="d"
-		Title="MainWindow" Height="400" Width="280" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+		Title="MainWindow" Height="165" Width="280" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
 
 		<StackPanel>
 			<TextBox 
@@ -32,7 +32,7 @@
                 hc:InfoElement.Title="移动账号" 
                 Style="{StaticResource TextBoxExtend}" 
                 Margin="0,16,0,0" 
-                x:Name="Wlan_User"/>
+                x:Name="Wlan_User" Visibility="Collapsed"/>
 			<PasswordBox 
                 Width="260" 
                 hc:InfoElement.TitleWidth="75" 
@@ -40,7 +40,7 @@
                 hc:InfoElement.Title="WLAN密码" 
                 Style="{StaticResource PasswordBoxExtend}" 
                 Margin="0,16,0,0"
-                x:Name="Wlan_Pass"/>
+                x:Name="Wlan_Pass" Visibility="Collapsed"/>
 
 			<Button 
 				Content="登录" 
