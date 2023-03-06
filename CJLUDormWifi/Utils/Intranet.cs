@@ -1,22 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime;
-using System.Security.Cryptography;
-using System.Security.Policy;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
-
-namespace CJLUDormWifi.Utils
+﻿namespace CJLUDormWifi.Utils
 {
     public class Intranet
     {
-        /*public static string portalUri = "http://192.168.100.12:801/eportal/";
-        public static string baseUri = "http://192.168.100.12/";
-        public static string loginPage = "http://192.168.100.12/a70.htm";
-        public static string resultPage = "http://192.168.100.12/3.htm";*/
 
         public static string portalUri = "https://portal2.cjlu.edu.cn:801/eportal/";
         public static string baseUri = "https://portal2.cjlu.edu.cn/";
