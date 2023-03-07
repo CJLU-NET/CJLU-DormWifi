@@ -1,0 +1,34 @@
+﻿<Window x:Class="CJLUDormWifi.IntroWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:local="clr-namespace:CJLUDormWifi"
+        mc:Ignorable="d"
+        Title="使用说明" Height="420" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <hc:TransitioningContentControl>
+        <FlowDocument>
+            <Paragraph>
+                <Bold FontSize="20">内网账密是什么？</Bold>
+                <LineBreak/>
+                <Run>即统一登录账密（账号是学号；密码就是你在计量经常用的密码，不是教务系统的密码）</Run>
+            </Paragraph>
+            <Paragraph>
+                <Bold FontSize="20">移动账号是什么？</Bold>
+                <LineBreak/>
+                <Run>就你的移动校园卡手机号</Run>
+            </Paragraph>
+            <Paragraph>
+                <Bold FontSize="20">固定密码是什么？</Bold>
+                <LineBreak/>
+                <Run>在激活移动校园卡时发了条短信（“你好！欢迎使用中国移动随e行WLAN业务... 密码：... 中国移动”）</Run>
+                <Run>这里的密码就是固定密码</Run>
+                <LineBreak/>
+                <Run>如需修改密码则请发送“</Run>
+                <Bold>XGEDUMM 旧密 新密</Bold>
+                <Run>”至 10086</Run>
+            </Paragraph>
+        </FlowDocument>
+    </hc:TransitioningContentControl>
+</Window>

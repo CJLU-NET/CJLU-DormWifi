@@ -1,0 +1,50 @@
+﻿<Window x:Class="CJLUDormWifi.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:hc="https://handyorg.github.io/handycontrol"
+        xmlns:local="clr-namespace:CJLUDormWifi"
+        mc:Ignorable="d"
+        Title="关于软件" Height="420" Width="400" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <hc:TransitioningContentControl>
+
+            <FlowDocument>
+                <Paragraph>
+                    <Run FontSize="20">介绍</Run>
+                    <LineBreak/>
+                    <Run>本工具由</Run>
+                    <Bold>我是朱履诺</Bold>
+                    <Run>开发</Run>
+                    <LineBreak/>
+                    <Run>纯属为爱发电。如果你愿意的话，可以打个赏支持一下</Run>
+                    <LineBreak/>
+                    <Run>联系方式：</Run>
+                    <LineBreak/>
+                    <Hyperlink Click="Hyperlink_Click" NavigateUri="https://wpa.qq.com/msgrd?v=3&amp;uin=3193472696">QQ</Hyperlink>
+                    <Run> </Run>
+                    <Hyperlink Click="Hyperlink_Click" NavigateUri="https://jq.qq.com/?_wv=1027&amp;k=me9c7lku">QQ群</Hyperlink>
+                    <Run></Run>
+                    <Hyperlink Click="Hyperlink_Click" NavigateUri="https://space.bilibili.com/46377092">哔哩哔哩</Hyperlink>
+                    <Run></Run>
+                    <Hyperlink Click="Hyperlink_Click" NavigateUri="https://github.com/FoskyM">Github</Hyperlink>
+                </Paragraph>
+
+                <Paragraph>
+                    <Run FontSize="20">说明</Run>
+                    <LineBreak/>
+                    <Run>本工具适用</Run>
+                    <Bold>CMCC-EDU</Bold>
+                    <Run>的登录</Run>
+                    <LineBreak/>
+                    <Run>目前可以绕过证书验证，实现内网登录（不保证都能正常登录）；并实现移动WLAN自动登录</Run>
+                    <LineBreak/>
+                    <Run>主要方便部分没有网口的轻薄本用户和部分宽带接口无效的用户。</Run>
+                </Paragraph>
+                <Paragraph>
+                    <Hyperlink Click="Hyperlink_Click">https://github.com/FoskyM/CJLUDormWifi</Hyperlink>
+                </Paragraph>
+            </FlowDocument>
+
+    </hc:TransitioningContentControl>
+</Window>

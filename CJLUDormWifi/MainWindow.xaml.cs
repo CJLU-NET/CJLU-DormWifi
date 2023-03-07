@@ -48,12 +48,14 @@ namespace CJLUDormWifi
 
 			if (link.NavigateUri.AbsoluteUri == "self://introduction/")
 			{
-
+				IntroWindow window = new IntroWindow();
+				window.Show();
 			}
 			else if (link.NavigateUri.AbsoluteUri == "self://about/")
 			{
-
-			}
+                AboutWindow window = new AboutWindow();
+                window.Show();
+            }
 			else
 			{
 				Process.Start(new ProcessStartInfo(link.NavigateUri.AbsoluteUri) { UseShellExecute = true });
