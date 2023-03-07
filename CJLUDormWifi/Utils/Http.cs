@@ -16,7 +16,7 @@ namespace CJLUDormWifi.Utils
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             try
             {
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url);
+                HttpWebRequest request = (HttpWebRequest) WebRequest.Create(Url);
                 request.Method = "POST";
                 request.ServerCertificateValidationCallback = (_s, _x509s, _x509c, _ssl) => { return (true); };
                 // request.ContentType = "application/json";
@@ -62,7 +62,7 @@ namespace CJLUDormWifi.Utils
             System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
             try
             {
-                HttpWebRequest request = (HttpWebRequest)WebRequest.Create(Url + (getDataStr == "" ? "" : "?") + getDataStr);
+                HttpWebRequest request = (HttpWebRequest) WebRequest.Create(Url + (getDataStr == "" ? "" : "?") + getDataStr);
                 request.Method = "GET";
                 request.ServerCertificateValidationCallback = (_s, _x509s, _x509c, _ssl) => { return (true); };
                 // request.ContentType = "application/json";
