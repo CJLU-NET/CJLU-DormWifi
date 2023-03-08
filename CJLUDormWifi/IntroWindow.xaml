@@ -8,27 +8,29 @@
         mc:Ignorable="d"
         Title="使用说明" Height="420" Width="400" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <hc:TransitioningContentControl>
-        <FlowDocument>
-            <Paragraph>
-                <Bold FontSize="20">内网账密是什么？</Bold>
-                <LineBreak/>
-                <Run>即统一登录账密（账号是学号；密码就是你在计量经常用的密码，不是教务系统的密码）</Run>
-            </Paragraph>
-            <Paragraph>
-                <Bold FontSize="20">移动账号是什么？</Bold>
-                <LineBreak/>
-                <Run>就你的移动校园卡手机号</Run>
-            </Paragraph>
-            <Paragraph>
-                <Bold FontSize="20">固定密码是什么？</Bold>
-                <LineBreak/>
-                <Run>在激活移动校园卡时发了条短信（“你好！欢迎使用中国移动随e行WLAN业务... 密码：... 中国移动”）</Run>
-                <Run>这里的密码就是固定密码</Run>
-                <LineBreak/>
-                <Run>如需修改密码则请发送“</Run>
-                <Bold>XGEDUMM 旧密 新密</Bold>
-                <Run>”至 10086</Run>
-            </Paragraph>
-        </FlowDocument>
+        <RichTextBox Margin="32" Width="400" Height="300" ScrollViewer.VerticalScrollBarVisibility="Auto">
+            <FlowDocument>
+                <Paragraph>
+                    <Bold FontSize="20">内网账密是什么？</Bold>
+                    <LineBreak/>
+                    <Run>即统一登录账密（账号是学号；密码就是你在计量经常用的密码，不是教务系统的密码）</Run>
+                </Paragraph>
+                <Paragraph>
+                    <Bold FontSize="20">移动账号是什么？</Bold>
+                    <LineBreak/>
+                    <Run>就你的移动校园卡手机号</Run>
+                </Paragraph>
+                <Paragraph>
+                    <Bold FontSize="20">固定密码是什么？</Bold>
+                    <LineBreak/>
+                    <Run>在激活移动校园卡时发了条短信（“你好！欢迎使用中国移动随e行WLAN业务... 密码：... 中国移动”）</Run>
+                    <Run>这里的密码就是固定密码</Run>
+                    <LineBreak/>
+                    <Run>如需修改密码则请发送“</Run>
+                    <Bold>XGEDUMM 旧密 新密</Bold>
+                    <Run>”至 10086</Run>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
     </hc:TransitioningContentControl>
 </Window>

@@ -8,7 +8,7 @@
         mc:Ignorable="d"
         Title="关于软件" Height="420" Width="400" HorizontalAlignment="Center" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
     <hc:TransitioningContentControl>
-
+        <RichTextBox Margin="32" Width="400" Height="300" ScrollViewer.VerticalScrollBarVisibility="Auto" IsReadOnly="True">
             <FlowDocument>
                 <Paragraph>
                     <Run FontSize="20">介绍</Run>
@@ -22,7 +22,7 @@
                     <Run>联系方式：</Run>
                     <LineBreak/>
                     <Hyperlink Click="Hyperlink_Click" NavigateUri="https://wpa.qq.com/msgrd?v=3&amp;uin=3193472696">QQ</Hyperlink>
-                    <Run> </Run>
+                    <Run></Run>
                     <Hyperlink Click="Hyperlink_Click" NavigateUri="https://jq.qq.com/?_wv=1027&amp;k=me9c7lku">QQ群</Hyperlink>
                     <Run></Run>
                     <Hyperlink Click="Hyperlink_Click" NavigateUri="https://space.bilibili.com/46377092">哔哩哔哩</Hyperlink>
@@ -45,6 +45,6 @@
                     <Hyperlink Click="Hyperlink_Click">https://github.com/FoskyM/CJLUDormWifi</Hyperlink>
                 </Paragraph>
             </FlowDocument>
-
+        </RichTextBox>
     </hc:TransitioningContentControl>
 </Window>

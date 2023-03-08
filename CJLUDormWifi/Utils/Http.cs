@@ -21,6 +21,10 @@ namespace CJLUDormWifi.Utils
                 request.ServerCertificateValidationCallback = (_s, _x509s, _x509c, _ssl) => { return (true); };
                 // request.ContentType = "application/json";
                 request.ContentType = "application/x-www-form-urlencoded";
+                request.Headers.Add("Upgrade-Insecure-Requests", "1");
+                request.Headers.Add("User-Agent", "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36 Edg/110.0.1587.63");
+
+                // request.Headers.Add("", "");
 
                 byte[] bt = Encoding.UTF8.GetBytes(postDataStr);
                 string responseData = String.Empty;
