@@ -16,7 +16,7 @@
 				hc:InfoElement.Title="内网账号" 
 				Style="{StaticResource TextBoxExtend}" 
 				Margin="0,16,0,0"
-                x:Name="Intranet_User"/>
+				x:Name="Intranet_User"/>
 			<PasswordBox 
 				Width="250" 
 				hc:InfoElement.TitleWidth="60" 
@@ -24,40 +24,41 @@
 				hc:InfoElement.Title="内网密码" 
 				Style="{StaticResource PasswordBoxExtend}" 
 				Margin="0,16,0,0"
-                x:Name="Intranet_Pass"/>
+				x:Name="Intranet_Pass"/>
 			<TextBox 
 				Width="250" 
 				hc:InfoElement.TitleWidth="60" 
 				hc:InfoElement.TitlePlacement="Left" 
-                hc:InfoElement.Title="移动账号" 
-                Style="{StaticResource TextBoxExtend}" 
-                Margin="0,16,0,0" 
-                x:Name="Wlan_User"/>
+				hc:InfoElement.Title="移动账号" 
+				Style="{StaticResource TextBoxExtend}" 
+				Margin="0,16,0,0" 
+				x:Name="Wlan_User"/>
 			<PasswordBox 
-                Width="250" 
-                hc:InfoElement.TitleWidth="60" 
-                hc:InfoElement.TitlePlacement="Left" 
-                hc:InfoElement.Title="固定密码" 
-                Style="{StaticResource PasswordBoxExtend}" 
-                Margin="0,16,0,0"
-                x:Name="Wlan_Pass"/>
+				Width="250" 
+				hc:InfoElement.TitleWidth="60" 
+				hc:InfoElement.TitlePlacement="Left" 
+				hc:InfoElement.Title="固定密码" 
+				Style="{StaticResource PasswordBoxExtend}" 
+				Margin="0,16,0,0"
+				x:Name="Wlan_Pass"/>
 
 			<Button 
 				Content="登录" 
 				Style="{StaticResource ButtonPrimary}" 
 				Margin="0,16,0,0" 
 				Width="250" 
-                x:Name="Btn_Login"
-                Click="Btn_Login_Click"/>
+				x:Name="Btn_Login"
+				Click="Btn_Login_Click"/>
 
 			<StackPanel
-                Margin="0,16,0,0" 
+				Margin="0,12,0,0" 
 				Width="250" >
-            <TextBlock HorizontalAlignment="Right">
-                <Hyperlink NavigateUri="self://introduction" Click="Hyperlink_Click" ToolTip="使用说明">使用说明</Hyperlink>
-                <Hyperlink NavigateUri="self://about" Click="Hyperlink_Click" ToolTip="关于软件">关于软件</Hyperlink>
-                <Hyperlink NavigateUri="https://github.com/FoskyM/CJLUDormWifi" Click="Hyperlink_Click" ToolTip="项目仓库">项目仓库</Hyperlink>
-            </TextBlock>
+				<TextBlock HorizontalAlignment="Right">
+					<Hyperlink NavigateUri="self://introduction" Click="Hyperlink_Click" ToolTip="使用说明">使用说明</Hyperlink>
+					<Hyperlink NavigateUri="self://about" Click="Hyperlink_Click" ToolTip="关于软件">关于软件</Hyperlink>
+					<Hyperlink NavigateUri="https://github.com/FoskyM/CJLUDormWifi" Click="Hyperlink_Click" ToolTip="项目仓库">项目仓库</Hyperlink>
+					<Hyperlink NavigateUri="self://donate" Click="Hyperlink_Click" ToolTip="打赏" Foreground="Red">打赏</Hyperlink>
+				</TextBlock>
 			</StackPanel>
 		</StackPanel>
 

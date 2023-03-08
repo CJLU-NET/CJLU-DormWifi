@@ -86,7 +86,11 @@ namespace CJLUDormWifi
 		{
 			Hyperlink link = sender as Hyperlink;
 
-			if (link.NavigateUri.AbsoluteUri == "self://introduction/")
+            if (link.NavigateUri.AbsoluteUri == "self://donate/")
+            {
+                DonateWindow window = new DonateWindow();
+                window.Show();
+            } else if (link.NavigateUri.AbsoluteUri == "self://introduction/")
 			{
 				IntroWindow window = new IntroWindow();
 				window.Show();

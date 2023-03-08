@@ -21,11 +21,19 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="qrcode.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Include="cjlu圆角.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="HandyControl" Version="3.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="qrcode.jpg" />
   </ItemGroup>
 
 </Project>
