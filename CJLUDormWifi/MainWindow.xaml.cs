@@ -34,7 +34,12 @@ namespace CJLUDormWifi
 
             config.Save();
 
-			if (!Intranet.Login(Intranet_User.Text, Intranet_Pass.Password))
+			if (!Intranet.Ping("portal1.cjlu.edu.cn"))
+            {
+                MessageBox.Show("未连接至 CMCC-EDU", "提示", MessageBoxButton.OK, MessageBoxImage.Warning);
+                Btn_Login.IsEnabled = true;
+                Btn_Login.Content = "登录";
+            } else if (!Intranet.Login(Intranet_User.Text, Intranet_Pass.Password))
 			{
                 if (!Wlan.Login(Wlan_User.Text, Wlan_Pass.Password))
                 {
