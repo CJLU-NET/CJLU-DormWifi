@@ -24,7 +24,7 @@ namespace CJLUDormWifi.Utils
             string data = Http.Get(resultPage, "wlanuserip=" + ip + "&wlanacip=null&wlanacname=1234567890&port=&iTermType=1&mac=000000000000&ip=" + ip + "&redirect=null");
 
             data = Http.Post(url, para_post);
-            File.WriteAllText("portal.txt", data);
+            // File.WriteAllText("portal.txt", data);
 
             // File.WriteAllText("11.txt", Http.Get("https://portal2.cjlu.edu.cn/3.htm?wlanuserip=" + ip + "&wlanacip=192.168.8.1&wlanacname=me60&redirect=&session="));
 
@@ -37,7 +37,7 @@ namespace CJLUDormWifi.Utils
         {
             string data = Http.Get(getIPPage);
             string ip = Helper.GetMiddleStr(data, ";v46ip='", "' ");
-            File.WriteAllText("ip.txt", ip);
+            // File.WriteAllText("ip.txt", ip);
             return ip;
         }
         public static bool Ping(string ip)

@@ -82,7 +82,7 @@ namespace CJLUDormWifi.Utils
 			string url = base_uri + "portalLogin.wlan?" + timestamp;
 
 			string res = Http.Post(url, para_post);
-			File.WriteAllText("cmcc.txt", res);
+			// File.WriteAllText("cmcc.txt", res);
 
 			if (res.Contains("alert")) return false;
 

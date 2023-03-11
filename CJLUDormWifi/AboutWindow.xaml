@@ -42,7 +42,7 @@
                     <Run>主要方便部分没有网口的轻薄本用户和部分宽带接口无效的用户。</Run>
                 </Paragraph>
                 <Paragraph>
-                    <Hyperlink Click="Hyperlink_Click">https://github.com/FoskyM/CJLUDormWifi</Hyperlink>
+                    <Hyperlink Click="Hyperlink_Click">https://github.com/FoskyM/CJLU-DormWifi</Hyperlink>
                 </Paragraph>
             </FlowDocument>
         </RichTextBox>
