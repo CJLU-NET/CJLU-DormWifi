@@ -20,10 +20,10 @@ namespace CJLUDormWifi.Utils
                 request.Method = "POST";
                 request.ServerCertificateValidationCallback = (_s, _x509s, _x509c, _ssl) => { return (true); };
                 ServicePointManager.ServerCertificateValidationCallback += (s, cert, chain, sslPolicyErrors) => true;
-                ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 |
-                                                        SecurityProtocolType.Tls |
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls |
                                                         SecurityProtocolType.Tls11 |
                                                         SecurityProtocolType.Tls12 |
+                                                        SecurityProtocolType.Tls13 |
                                                         (SecurityProtocolType)12288;
                 // request.ContentType = "application/json";
                 request.ContentType = "application/x-www-form-urlencoded";
@@ -43,7 +43,7 @@ namespace CJLUDormWifi.Utils
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
                 Stream myResponseStream = response.GetResponseStream();
-                StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.GetEncoding("gb2312"));
+                StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.GetEncoding("utf-8"));
                 string retString = myStreamReader.ReadToEnd();
                 myStreamReader.Close();
                 myResponseStream.Close();
@@ -66,16 +66,16 @@ namespace CJLUDormWifi.Utils
                 request.Method = "GET";
                 request.ServerCertificateValidationCallback = (_s, _x509s, _x509c, _ssl) => { return (true); };
                 ServicePointManager.ServerCertificateValidationCallback += (s, cert, chain, sslPolicyErrors) => true;
-                ServicePointManager.SecurityProtocol = SecurityProtocolType.Ssl3 |
-                                                        SecurityProtocolType.Tls |
+                ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls | 
                                                         SecurityProtocolType.Tls11 |
                                                         SecurityProtocolType.Tls12 |
+                                                        SecurityProtocolType.Tls13 |
                                                         (SecurityProtocolType)12288;
                 // request.ContentType = "application/json";
 
                 HttpWebResponse response = (HttpWebResponse)request.GetResponse();
                 Stream myResponseStream = response.GetResponseStream();
-                StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.GetEncoding("gb2312"));
+                StreamReader myStreamReader = new StreamReader(myResponseStream, Encoding.GetEncoding("utf-8"));
                 string retString = myStreamReader.ReadToEnd();
                 myStreamReader.Close();
                 myResponseStream.Close();
